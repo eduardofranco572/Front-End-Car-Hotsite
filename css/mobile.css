@@ -1,0 +1,130 @@
+@media (max-width: 1024px){
+    .videobackground video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@media (max-width: 786px){
+    
+    .videobackground video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+}
+
+
+@media (max-width: 425px){
+    .videobackground video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+
+    .itens-menu li{
+        display: none;
+    }
+
+    .cards {
+        max-width: 100vw;
+    }
+
+    .infos-parts {
+        justify-content: center;
+        margin-top: 2rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .area {
+        width: 55%;
+    }
+
+    @keyframes areaani {
+        0% { 
+            width: 0%;
+        }
+        100% {
+            width: 55%; 
+        }
+    }
+
+    .titles-ar h1 {
+        font-size: 39px;
+    }
+
+    .infos-ar {
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 1rem;
+    }
+
+    .titles-ad h1 {
+        font-size: 32px;
+    }
+
+    .aling-ipp {
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+
+    .itens-powe h1 {
+        font-size: 58px;
+        text-align: center;
+    }
+
+    .itens-powe p {
+        text-align: center;
+    }
+
+    .title-sr {
+        font-size: 27px;
+    }
+
+    .RSP{
+        margin: 1rem;
+    }
+
+    .itens-powe {
+        align-items: center;
+    }
+    
+    .itens-powe p {
+        font-size: 16px;
+        max-width: 100%;
+        margin: 1rem;
+    }
+    
+
+    .faqs {
+        margin: 9rem 2rem 2rem 2rem;
+    }
+
+    .title-details {
+        font-size: 14px;
+    }
+}
+
+
+
+

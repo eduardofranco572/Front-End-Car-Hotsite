@@ -1,0 +1,161 @@
+.home{
+    height: 100%;
+}
+
+.title-start{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.text-ts{
+    display: flex;
+    align-items: self-start;
+    text-align: start;
+}
+
+.text-ts h1{
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.text-ts p{
+    font-size: 12px;
+}
+
+.subtext-ts{
+    color: var(--subtext-color);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 2rem;
+    max-width: 33rem;
+    text-align: center;
+}
+
+.title-start button{
+    font-size: 14px;
+    border: 2px solid #3a3a3a;
+    background-color: rgb(135 133 133 / 0%);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 15px;
+    width: 10rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.title-start button:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.alignbtn, 
+.alignbtnDown{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 2rem;
+}
+
+.icone-scroll, .icone-scroll2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--text-color);
+    height: 3.4rem;
+    width: 1.6rem;
+    border-radius: 1rem;
+    overflow: hidden; 
+    position: relative; 
+    cursor: pointer;
+    user-select: none;
+}
+
+.icone-scroll span {
+    background-color: var(--text-color);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    transition: top 4s linear; 
+    animation: moveCenter 4s infinite;
+    user-select: none;
+}
+
+@keyframes moveCenter {
+    0% {
+        top: 5px; 
+    }
+    50% {
+        top: calc(50% - 3.5px); 
+    }
+    100% {
+        top: 5px; 
+    }
+}
+
+.alignbtnTop{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-top: 2rem;
+}
+
+.icone-scroll2  span{
+    position: absolute;
+    top: 0;
+    transition: top 4s linear; 
+    animation: moveCenter2 4s infinite;
+    user-select: none;
+    font-size: 26px;
+}
+
+@keyframes moveCenter2 {
+    0% {
+        top: 5px; 
+    }
+    50% {
+        top: calc(50% - 3.5px); 
+    }
+    100% {
+        top: 5px; 
+    }
+}
+
+.menuclose{
+    position: relative;
+    top: 0;
+    transition: top 2s linear; 
+    animation: closeMenu 2s;
+    user-select: none;
+    opacity: 0;
+}
+
+@keyframes closeMenu {
+    0% {
+        top: 0;
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0.5; 
+    }
+    100% {
+        top: -50px; 
+        opacity: 0; 
+    }
+}
+
+
+.alignbtn, .alignbtnTop{
+    display: none;
+}
+
+.pagina-preta {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}

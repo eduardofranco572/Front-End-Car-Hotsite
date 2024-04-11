@@ -1,0 +1,224 @@
+.parts{
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    margin: 3rem 0 1rem 0;
+}
+
+.components-parts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.infos-parts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 8rem;   
+}
+
+.h1infos{
+    font-size: 75px;
+    font-family: var(--font-Logo);
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: h1infos 2s;
+}
+
+@keyframes h1infos {
+    0% {
+        top: 2rem;
+        opacity: 0; 
+    }
+    50% {
+        opacity: 0.5; 
+    }
+    100% {
+        top: 0; 
+        opacity: 1; 
+    }
+}
+
+.pinfos{
+    font-size: 14px;
+    max-width: 15rem;
+    color: var(--subtext-color);
+    margin-top: 0.5rem;
+    position: relative;
+    top: 0;
+    animation: pinfos 2s;
+}
+
+@keyframes pinfos {
+    0% {
+        top: 2rem;
+        opacity: 0; 
+    }
+    50% {
+        opacity: 0.5; 
+    }
+    100% {
+        top: 0; 
+        opacity: 1; 
+    }
+}
+
+.btninfos{
+    font-size: 13px;
+    border: 2px solid #3a3a3a;
+    background-color: rgb(135 133 133 / 0%);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 12px;
+    width: 11rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    top: 0;
+    animation: btninfos 2s;
+}
+
+.btninfos:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+@keyframes btninfos {
+    0% {
+        top: 10rem;
+        opacity: 0; 
+    }
+    50% {
+        opacity: 0.5; 
+    }
+    100% {
+        top: 0; 
+        opacity: 1; 
+    }
+}
+
+.btninfosClose{
+    animation: btninfosClose 1s !important;
+}
+
+@keyframes btninfosClose {
+    0% {
+        top: 0;
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0.5; 
+    }
+    100% {
+        top: 30rem; 
+        opacity: 0; 
+    }
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    border-radius: 5rem; 
+}
+
+.carousel{
+    position: relative;
+    right: 0;
+    animation: carousel 2s;
+}
+
+@keyframes carousel {
+    0% {
+        right: -10rem;
+        opacity: 0; 
+    }
+    50% {
+        opacity: 0.5; 
+    }
+    100% {
+        right: 0; 
+        opacity: 1; 
+    }
+}
+
+.carouselClose{
+    animation: carouselClose 1s;
+}
+
+@keyframes carouselClose {
+    0% {
+        left: 0;
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0.5; 
+    }
+    100% {
+        left: 16rem; 
+        opacity: 0; 
+    }
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    max-width: 40rem;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.cardOne {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    user-select: none;
+}
+
+.cardOne img{
+    width: 23rem;
+    height: 14rem;
+    border-radius: 2rem;
+}
+
+.cardOne h1{
+    font-size: 16px;
+    margin-top: 1rem;
+    color: var(--subtext-color);
+    margin-left: 1rem;
+}
+
+.carousel-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(135 133 133 / 0%);
+    backdrop-filter: blur(10px);
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 11px;
+}
+.carousel-container button span{
+    font-size: 27px;
+}
+
+#prevButton {
+    left: 0;
+}
+
+.carousel-container button:hover{
+    padding: 15px;
+    transition: 0.2s;
+}
+
+#nextButton {
+    right: 0;
+}

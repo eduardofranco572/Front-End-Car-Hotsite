@@ -1,0 +1,390 @@
+footer {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-Back);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    animation: footer 2s;
+}
+
+@keyframes footer {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.itens-powe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.itens-powe h1 {
+    font-size: 85px;
+    font-family: var(--font-Logo);
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: textAI 2s;
+    
+}
+
+@keyframes textAI {
+    0% {
+        opacity: 0;
+        top: 10rem;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.aling-ipp {
+    width: 35rem;
+    margin: 3rem;  
+}
+
+.itens-powe p {
+    color: var(--subtext-color);
+    font-size: 20px;
+    max-width: 90%;
+    margin-top: 1rem;
+    position: relative;
+    left: 0;
+    animation: subAI 2s;
+    
+}
+
+@keyframes subAI {
+    0% {
+        opacity: 0;
+        left: 30rem;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+.sponsors {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-sr {
+    font-size: 48px;
+    font-family: var(--font-Logo);
+    font-weight: 500;
+    max-width: 22rem;
+    text-align: center;
+    position: relative;
+    top: 0;
+    animation: textTS 2s; 
+}
+
+@keyframes textTS {
+    0% {
+        opacity: 0;
+        top: -30rem;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+
+.rowRightSp, .rowLeftSp {
+    margin-top: 5rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.rowRightSp i {
+    font-size: 5rem;
+}
+
+.carouselrowRSP, .carouselrowRightRSP {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+/* carousel */
+@keyframes s_scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-100px * 7));
+        transform: translateX(calc(-100px * 7));
+        opacity: 0;
+    }
+}
+
+.rowRightSp .carouselrowRSP {
+    -webkit-animation: s_scroll 10s ease-in-out infinite forwards;
+    animation: s_scroll 10s ease-in-out infinite forwards;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.rowRightSp, .rowLeftSp {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.rowRightSp .slide {
+    width: 100%;
+}
+
+/* carouselRight */
+
+.RightRSP{
+    font-size: 5rem; 
+    width: 100%;
+}
+
+@keyframes s_scroll2 {
+    0% {
+        -webkit-transform: translateX(calc(-100px * 7));
+        transform: translateX(calc(-100px * 7));
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 0;
+    }
+}
+
+.rowLeftSp .carouselrowRightRSP {
+    -webkit-animation: s_scroll2 10s ease-in-out infinite forwards;
+    animation: s_scroll2 10s ease-in-out infinite forwards;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+/* fim carousel */
+
+.faqs {
+    margin: 9rem 3rem 3rem 3rem;
+}
+
+.faqs h1{
+    font-family: var(--font-Logo);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 48px;
+    color: var(--text-color);
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.questions details{
+    background-color: var(--color-backSoft);
+    border-radius: 1rem;
+    width: 100%;
+    user-select: none;
+    cursor: pointer;
+    margin: 1rem 1rem 0rem 1rem;
+}
+
+.questions summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.questions p{
+    font-size: 14px;
+    margin: 1rem 3rem;
+    padding: 1;
+    line-height: 1.6rem;
+}
+
+.title-details{
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--text-color); 
+}
+
+.questions details:hover{
+    transition: 0.6s;
+    transform: scale(1.05);
+}
+
+/* Real Footer */
+
+.links-footer{
+    margin: 1rem 3rem;
+}
+
+.links-footer::after, .links-footer::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-borders);
+    display: block;
+    margin: 10px auto;
+}
+
+.menu-lf{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-lf h1{
+    font-family: var(--font-Logo);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 42px;
+}
+
+.search{
+    width: 40rem;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-backSoft);
+    border: 2px solid var(--color-borders);
+    border-radius: 0.6rem;
+}
+
+.search input{
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: var(--subtext-color);
+    width: 40rem;
+}
+
+.search input:focus {
+    border: none;
+}
+
+.search input:focus {
+    outline: none;
+    border: none;
+}
+
+.search span{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icons-redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 13rem;
+}
+
+.icons-redes i{
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.icons-redes i:hover{
+    transition: 0.5s;
+    transform: scale(1.3);
+}
+
+.infos-sups{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 4rem 0rem;
+}
+
+.elemtentos-is{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.elemtentos-is h1{
+    margin-bottom: 2rem;
+    font-size: 20px;
+    color: var(--text-color);
+    font-family: 500;
+}
+
+.elemtentos-is p{   
+    font-size: 16px;
+    color: var(--subtext-color);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    max-width: 11rem;
+}   
+
+.altoria{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 3rem 1rem 3rem;
+}
+
+.altoria p{
+    font-size: 12px;
+    color: var(--subtext-color);
+}
+
+.altoria p span{
+    margin: 0 1rem;
+    color: var(--subtext-color);
+}

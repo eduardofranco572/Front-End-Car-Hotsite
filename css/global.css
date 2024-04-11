@@ -1,0 +1,97 @@
+:root {
+    --primary-color: black;
+    --text-color:white;
+    --font-Logo: "League Gothic", sans-serif;
+    --subtext-color: #adadad;
+    --color-Back: #141414;
+    --color-backSoft: #111111;
+    --color-borders: #202020;
+}
+
+*{
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+} 
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+}
+
+.font-logo{
+    font-family: var(--font-Logo);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--text-color);
+}
+
+.itens-menu{
+    display: flex;
+    align-items: center;
+}
+
+.itens-menu li{
+    margin: 1rem 1rem;
+    list-style: none;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.itens-menu li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.itens-menu button{
+    padding: 10px;
+    width: 7.5rem;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    font-size: 13px;
+    border: none;
+    border-radius: 0.5rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.videobackground{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.videobackground video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* 
+.videobackground{
+    display: none !important;
+}
+
+footer{
+    display: flex !important;
+} */
