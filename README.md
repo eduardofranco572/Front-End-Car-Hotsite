@@ -4,9 +4,6 @@ Olá, Meu nome é Eduardo e esse é o projeto do meu web site - Hotsite de um mo
 <br>
 <br>
  <div align="center">
-    <h1>Meu Site:</h1>
-   
-   <br>
    
    <h1>Imagens do Site</h1>
    <img src="img1.png">
