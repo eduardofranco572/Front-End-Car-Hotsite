@@ -12,7 +12,7 @@ Olá, Meu nome é Eduardo e esse é o projeto do meu web site - Hotsite de um mo
    <img src="img1.png">
   <br>
   <br>
-   <img src="img2.png">
+   <img src="img2.jpeg">
 </div>
 <br>
   Aqui são umas das linguagens de progamação que tenho conhecimento. e que utilizo para criar meus sites 💻
